@@ -1,12 +1,12 @@
 package cc.unitmesh.devti.util
 
+import com.intellij.openapi.Disposable
 import com.intellij.openapi.components.Service
 import com.intellij.openapi.components.service
 import com.intellij.openapi.diagnostic.logger
 import com.intellij.openapi.project.Project
 import com.intellij.util.concurrency.AppExecutorUtil
 import kotlinx.coroutines.*
-import org.jetbrains.letsPlot.commons.registration.Disposable
 
 private val workerThread = AppExecutorUtil.getAppExecutorService().asCoroutineDispatcher()
 
